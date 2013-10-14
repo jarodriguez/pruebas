@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="pruebas" default="phpcpd">
+  <target name="phpcpd"
+          description="Generate pmd-cpd.xml using phpcpd"
+          depends="init">
+    <phpcpd>
+      <fileset refid="src.php.custom" />
+      <formatter type="pmd" outfile="${project.logdir}/pmd-cpd.xml"/>
+    </phpcpd>
+  </target>
+</project>
