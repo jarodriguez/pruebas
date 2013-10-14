@@ -8,7 +8,7 @@
      <fileset dir=".">
       <include name="*.php" />
      </fileset>
-      <formatter type="pmd" outfile="${project.logdir}/pmd-cpd.xml"/>
+      <formatter type="pmd" outfile="pmd-cpd.xml"/>
     </phpcpd>
   </target>
 </project>
