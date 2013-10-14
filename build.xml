@@ -5,7 +5,6 @@
           description="Generate pmd-cpd.xml using phpcpd"
           >
     <phpcpd>
-      <fileset refid="src.php.custom" />
       <formatter type="pmd" outfile="${project.logdir}/pmd-cpd.xml"/>
     </phpcpd>
   </target>
