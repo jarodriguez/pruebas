@@ -20,7 +20,7 @@
 	       <arg value="pmd.xml" />
 	   </exec>
 	</target>  
-  <target name="phpcs" description="lo que sea">
-    <exec command="phpcs --standard=ZEND --report=checkstyle . > checkstyle.xml" escape="false" />
-  </target>
+<target name="phpcs" description="lo que sea">
+    <exec command="phpcs --standard=coder/coder_sniffer/Drupal/ruleset.xml --extensions=php,module,inc,install,test,profile,theme --report=checkstyle . > checkstyle.xml" escape="false" />
+      </target>
 </project>
