@@ -20,4 +20,7 @@
 	       <arg value="pmd.xml" />
 	   </exec>
 	</target>  
+  <target name="phpcs" description="lo que sea">
+    <exec command="phpcs --standard=ZEND --report=checkstyle . > checkstyle.xml" escape="false" />
+  </target>
 </project>
