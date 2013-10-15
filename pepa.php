@@ -10,4 +10,3 @@ function test_one() {
     echo 'Soy otro bucle en el desierto';
   }
 }
-?>
